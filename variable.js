@@ -44,3 +44,11 @@ z = z+"string";
 console.log(x);
 console.log(y);
 console.log(z);
+
+var seenAfter = 21;
+console.log(typeof seenAfter); //typeof is built in funtion that shows the type of variable
+
+var isHot = true;
+var isRich = false;
+console.log(isHot);
+console.log( typeof isRich);
