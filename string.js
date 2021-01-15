@@ -4,3 +4,9 @@ console.log(promise.toLowerCase()); //built in function.it makes the strinlower 
 var paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Haec quo modo conveniant, non sane intellego";
 
 console.log(paragraph.toUpperCase());
+console.log(paragraph.indexOf('dolor'));
+console.log(paragraph.split('sit'));
+
+var findIndex = "abcdefghijklmnopqrstuvw";
+console.log(findIndex.indexOf('g'));
+console.log(findIndex.indexOf('u'));
