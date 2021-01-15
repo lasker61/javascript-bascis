@@ -23,3 +23,24 @@ b= a;
 c=23;
 b= a + c;
 console.log(b);
+
+//var types in javascript
+//1.undifined
+//2.null
+//3.number
+//4.string
+//5.symbol
+//6.boolean
+//7.object
+
+var x = 5;
+var y = 6;
+var z = "i am a ";
+
+x = x+1;
+y = y+ 64;
+z = z+"string";
+
+console.log(x);
+console.log(y);
+console.log(z);
