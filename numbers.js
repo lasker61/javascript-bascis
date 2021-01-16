@@ -11,3 +11,18 @@ num2 = parseInt(num2); //parse function converts string into integer or float
 num2 = parseFloat(num2);
 console.log(num1 + num2);
 console.log(num2 +num3);
+
+//now number to string how??
+
+var num4 = 34;
+num4 ="" + num4;
+console.log(num4); //this is a string.i just added an empty string with num4! you can check it with typof function!
+
+// what happens when we add two float numbers
+
+var num5 = 0.1;
+var num6 = 0.4;
+var total;
+total = num5 + num6;
+total = total.toFixed(3); //so we can fix how many digit after . we want! just using toFixed() functiom!
+console.log(total);  
