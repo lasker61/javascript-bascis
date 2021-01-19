@@ -30,3 +30,33 @@ function factorialNumber(n){
     }
 }
 console.log(factorialNumber(50));
+
+
+// using while loop
+
+factorialN = 1;
+var i = 1;
+
+function factNumber(factN){
+    while (i <=factN) {
+        factorialN=factorialN *i;
+        i++;
+          
+    }
+    return factorialN;
+}
+console.log(factNumber(55));
+
+
+//using recursion
+
+function factorialUsingRecursion(num){
+    //base case
+    if (num == 0 || num ==1) {
+        return 1
+    }
+    else{
+        return num*factorialUsingRecursion(num-1);
+    }
+}
+console.log(factorialUsingRecursion(45));
