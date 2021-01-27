@@ -24,5 +24,5 @@ var num5 = 0.1;
 var num6 = 0.4;
 var total;
 total = num5 + num6;
-total = total.toFixed(3); //so we can fix how many digit after . we want! just using toFixed() functiom!
+total = total.toFixed(2); //so we can fix how many digit after . we want! just using toFixed() functiom!
 console.log(total);  

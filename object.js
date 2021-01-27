@@ -14,3 +14,4 @@ student2.cgpa =3.13;
 console.log(student ,student2);
 console.log(student2.name);
 console.log(student.mobile);
+

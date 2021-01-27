@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .special p{
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 id="first">Explore Dom</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti molestias neque quidem quia pariatur atque quos modi tempora velit perspiciatis, fugit quibusdam reprehenderit libero iusto obcaecati necessitatibus aspernatur debitis esse quod mollitia doloribus quae provident recusandae! Nobis, itaque nostrum.</p>
+            <p id="para">second paragraph</p>
+            <p class="">third</p>
+            <h4 class="author"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam laboriosam, ad similique unde ullam?</h4>
+            <h4 class="author"> Lorem ipsum  adipisicing elit. Nesciunt quibusdam laboriosam, ad similique unde ullam?</h4>
+            <h4 class="author"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam laboriosam,ullam?</h4>
+            <article class="special">
+               <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sit molestiae a animi neque expedita quia esse veritatis consequuntur omnis odit suscipit minus quis nulla ex quo, quam consectetur aspernatur!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae et qui voluptate culpa quibusdam totam voluptatum itaque mollitia officia atque voluptatibus eveniet asperiores repellendus magnam, numquam soluta ducimus inventore odio.</p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        var first = document.getElementById('first');
+        first.style.color ='green';
+        var authors =document.getElementsByClassName('author');
+        for( var i = 0 ; i< authors.length ; i++){
+            var element = authors[i];
+           element.style.color ='blue';
+        }
+      
+        const newPara = document.createElement('p');
+        newPara.innerHTML ='helllodjskfjsdfgdfngdfmg';
+        article.appendChild('newPara');
+    </script>
+    
+</body>
+</html>
