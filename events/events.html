@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <h1 onclick="console.log('hello world')">exploring events</h1>
+    <button onclick="alert('45')">click me</button>  <!--event directly on the element  this is not proffesional way -->
+    <button onclick="handleClick()">submit</button> 
+    <button onclick="seeDate()">see date</button>
+    <button onmousemove="hoverMe()">hover</button><br> <br><br>
+    <button id="first">click me-1</button>
+    <button id="second">click me-2</button>
+    <button id="third">click me-3</button>
+    <br><br><br>
+    <button id="last">click click</button>
+    
+    <script>
+        function handleClick(){
+            console.log('someone clicked me!');
+        }
+        function seeDate(){
+            console.log(new Date());
+        }
+        function hoverMe(){
+            console.log("someone is over me");
+        }
+        var firstButton = document.getElementById('first');
+        firstButton.onclick = function(){
+            console.log('someone clicked on the first button');
+        }
+        function handleSecondButton(){
+            document.body.style.background ='cyan';
+        }
+        var secondButton = document.getElementById('second');
+        secondButton.onclick = handleSecondButton ;
+
+
+        //another way using event listener
+        function handleThirdButton(){
+            console.log('someone clicked me too');
+        }
+
+        var thirdButton =document.getElementById('third');
+        thirdButton = addEventListener('click', handleThirdButton);
+
+        //another way for last button
+
+        document.getElementById('last').addEventListener('click',function(){
+            document.body.style.background ='tomato';
+        })
+
+    </script>
+
+
+</body>
+</html>

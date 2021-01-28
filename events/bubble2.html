@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>My List</h1>
+            <ul id="mylist">
+                <li id="first" class="item">Lorem ipsum door sit amet.</li>
+                <li class="item">Lorem ipsm dolor sit amet.</li>
+                <li class="item">Lorem ipsum dolor sit.</li>
+                <li class="item">Lorem ipsuksjfdolor sit.</li>
+                <li class="item">djsglfghcfjmdsm</li>
+            </ul>
+            <button id="addNew">Add new</button>
+    </div>
+    <script>
+        var items = document.getElementsByClassName('item');
+        for (let i = 0; i < items.length; i++) {
+            const element = items[i];
+            element.addEventListener('click',function(event){
+               // console.log(event.target.innerText);
+                event.target.parentNode.removeChild(event.target);
+            })          
+        }
+        document.getElementById('addNew').addEventListener('click',function(event){
+            var itemParent =document.getElementById('mylist');
+            var newItem =document.createElement('li');
+            newItem.innerText ="Brand new Item";
+            itemParent.appendChild(newItem);
+        })
+        document.getElementById('mylist').addEventListener('click',function(event){
+            console.log(this,event.target);
+            event.target.parentNode.removeChild(event.target);
+            
+        })
+    </script>
+</body>
+</html>
